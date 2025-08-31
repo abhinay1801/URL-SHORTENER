@@ -33,7 +33,9 @@ const UrlProvider = ({ children }) => {
       setLoading(true);
       const response = await axios.get(`${BASE_URL}/analytics/${shortId}`);
       setLoading(false);
+      //console.log(response.data);
       return response.data;
+      
     } catch (err) {
       setError(err.response?.data?.error || 'Failed to fetch analytics');
       setLoading(false);

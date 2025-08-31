@@ -26,7 +26,8 @@ const urlSchema = new mongoose.Schema({
     default: Date.now
   },
   expiresAt: {
-    type: Date
+    type: Date,
+    default:7
   },
   createdBy: {
     type: mongoose.Schema.Types.ObjectId,

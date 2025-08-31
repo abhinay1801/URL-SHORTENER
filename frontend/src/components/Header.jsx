@@ -14,11 +14,11 @@ const Header = () => {
                 Home
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/analytics" className="hover:underline">
                 Analytics
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>

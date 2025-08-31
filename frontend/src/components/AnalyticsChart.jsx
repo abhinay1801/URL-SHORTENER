@@ -4,7 +4,6 @@ import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Toolti
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 const AnalyticsChart = ({ clickData }) => {
-  // Group clicks by date
   const clicksByDate = clickData.reduce((acc, click) => {
     const date = new Date(click.timestamp).toLocaleDateString();
     acc[date] = (acc[date] || 0) + 1;

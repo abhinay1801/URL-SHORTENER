@@ -12,7 +12,6 @@ const QRCodeModal = ({ shortUrl, qrCode, onClose }) => {
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
       console.error('Failed to copy:', err);
-      // Fallback for older browsers
       const textarea = document.createElement('textarea');
       textarea.value = shortUrl;
       document.body.appendChild(textarea);

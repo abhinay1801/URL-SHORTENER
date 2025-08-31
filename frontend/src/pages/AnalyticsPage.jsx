@@ -19,6 +19,7 @@ const AnalyticsPage = () => {
     const fetchAnalytics = async () => {
       try {
         const data = await getAnalytics(shortId);
+        // console.log(data);
         setAnalytics(data);
       } catch (err) {
         setError(err.message);
@@ -32,10 +33,10 @@ const AnalyticsPage = () => {
     }
   }, [shortId, getAnalytics]);
 
-  if (loading) return <div className="text-center py-8">Loading analytics...</div>;
+  if (loading) return <div className="text-center py-8"> Loading analytics...</div>;
   if (error) return <div className="text-center py-8 text-red-600">{error}</div>;
   if (!analytics) return <div className="text-center py-8">No analytics data found</div>;
-
+ 
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="max-w-6xl mx-auto">
