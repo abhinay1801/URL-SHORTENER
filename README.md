@@ -1,5 +1,8 @@
 # 🔗 URL Shortener Platform – MERN Stack
 
+#Contributors
+https://github.com/rajesh03333
+
 ## Overview
 The **URL Shortener Platform** is a web application built using the **MERN stack**.  
 It allows users to create **short, shareable links** from long URLs, generate **QR codes**, and view **detailed analytics** such as clicks, devices, and locations.  
